@@ -1,4 +1,4 @@
-package com.company.javacurse;
+package com.company.javacurse.basics;
 
 public class SalaryCalculator {
 
