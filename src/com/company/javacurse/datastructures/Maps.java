@@ -1,0 +1,33 @@
+package com.company.javacurse.datastructures;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class Maps {
+
+    public static void main(String[] args){
+
+        Map<Integer, String> hMap = new TreeMap<Integer, String>();
+
+        mapUtil(hMap);
+    }
+
+    public static void mapUtil(Map<Integer, String> map){
+
+        map.put(101, "Steve");
+        map.put(502, "Rodger");
+        map.put(22, "Jenifer");
+        map.put(315, "Mike");
+        map.put(36, "Ellie");
+        map.put(750, "Kelly");
+
+        System.out.println("See all the keys: " + map.keySet());
+        System.out.println("See all key-value pairs: " + map);
+        System.out.println(map.get(502));
+
+        for (int key : map.keySet())
+            System.out.println("[KEY: " + key + ". VALUE: " + map.get(key) + "]");
+    }
+}
